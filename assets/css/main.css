@@ -2225,46 +2225,60 @@ input, select, textarea {
 
 /* Banner */
 
-	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
-		background-position: center center;
-		background-size: auto 100%;
-		background-repeat: no-repeat;
-		text-align: center;
-		position: relative;
-		padding: 10em 0;
-		margin: 4em 0 0 0;
-	}
-	    #logo {
-		  position: absolute;
-		  top: 0;
-		  left: 2em;
-		  margin: 1em;
-		  width:100px;
-		  height: auto;
-		  }
+#banner {
+    background: #CCE8F4 url("../../images/pic01.jpg");
+    background-position: center center;
+    background-size: cover; /* Adjusted to cover the entire container */
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    padding: 10em 0;
+    margin: 4em 0 0 0;
+}
+
+	
+#logo {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    margin: 1em;
+    width: 20%; /* Adjust the width as needed for larger screens */
+    max-width: 50px; /* Set a maximum width to prevent it from becoming too large */
+    height: auto ;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #logo {
+        width: 10%; /* Adjust the width as needed for smaller screens */
+    }
+}
+
+	
 
 		#banner header {
-			background-color: rgba(14, 14, 13, 0.98);
+			background-color: rgba(176, 150, 235, 0.98);
 			display: inline-block;
 			padding: 2.5em 5em;
 			border-radius: 5px;
 		}
 
 			#banner header h2 {
-				color: #fff;
+				color: #ffffffd1;
 				font-weight: 700;
 				font-size: 2.5em;
 				margin: 0 0 0.65em 0;
 			}
 
 			#banner header p {
-				color: #d52349;
+				color: #72071e;
 				padding: 0;
-				font-style: normal;
+				font-family: 'Arial', sans-serif; /* Choose a suitable font-family */
+				font-style: normal; /* Or use italic if you want italics */
 				margin: 0;
 				font-size: 1.5em;
 			}
+			
 
 /* Intro */
 
@@ -2967,5 +2981,7 @@ input, select, textarea {
 			}
 
 	}
+
+	
 
 	
